@@ -12,10 +12,16 @@ class Game
     puts display_board
     check_for_win
   end 
+  
+  def win_count(current_piece)
 
+    
+  end  
+  
   def check_for_win
     if @winchecker.has_won?(current_piece, @board)
       puts "winner is #{current_piece}"
+      
       new_game
     elsif board_full
       puts "full board, play again!!!"
@@ -41,7 +47,7 @@ class Game
       puts "Already a piece there"
       return
     end  
-    @board[ row ][column] = @pieces[ @turn % 2 ]
+    @board[row][column] = @pieces[ @turn % 2 ]
       
   end  
 
@@ -56,7 +62,7 @@ class Game
   end  
 
   def current_piece
-    @pieces[ @turn%2 ]
+    @pieces[ @turn % 2 ]
   end  
   
 

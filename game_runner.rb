@@ -9,11 +9,11 @@ winchecker_1 = Winchecker.new()
 game = Game.new(winchecker_1)
 
 
-game.place_piece(0,0)
-game.place_piece(1,1)
-game.place_piece(1,0)
-game.place_piece(2,2)
-game.place_piece(2,0)
+game.turn(0,0)
+game.turn(1,1)
+game.turn(1,0)
+game.turn(2,2)
+game.turn(2,0)
 
 
 

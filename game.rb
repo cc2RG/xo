@@ -4,6 +4,7 @@ class Game
     @pieces = [:o, :x]
     @turn = 0
     @winchecker = winchecker
+    @game_history = []
   end
 
 
@@ -47,6 +48,7 @@ class Game
       puts "Already a piece there"
       return
     end  
+    
     @board[row][column] = @pieces[ @turn % 2 ]
       
   end  
